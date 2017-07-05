@@ -1,0 +1,33 @@
+[package]
+name = "encoji"
+version = "0.1.0"
+authors = ["Dave Allie <dave@daveallie.com>"]
+
+description = "Emoji based encoding and decoding. 🔥🔥🔥🚀"
+
+repository = "https://github.com/daveallie/encoji"
+homepage = "https://github.com/daveallie/encoji"
+documentation = "https://docs.rs/encoji"
+
+license = "MIT"
+build = "build.rs"
+
+include = [
+  "README.md",
+  "LICENSE",
+  "Cargo.toml",
+  "build.rs",
+  "emojis.json",
+  "src/**/*",
+]
+
+[dependencies]
+phf = "0.7"
+unicode-segmentation = "1.1.0"
+clippy = {version = "*", optional = true}
+
+[build-dependencies]
+phf_codegen = "0.7"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
