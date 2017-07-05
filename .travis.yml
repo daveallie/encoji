@@ -1,19 +1,17 @@
 language: rust
 cache: cargo
-env:
-- SKIP_CLIPPY=true
 matrix:
   include:
   - rust: stable
   - rust: beta
   - rust: nightly
-    env: SKIP_CLIPPY=false
+    env: RUN_CLIPPY=true
 before_script:
   - export PATH="$PATH:$HOME/.cargo/bin"
   - cargo install rustfmt || true
-  - if [ "$SKIP_CLIPPY" = "false" ] ; then cargo install clippy ; fi || true
+  - if [ "$RUN_CLIPPY" = "true" ] ; then cargo install clippy ; fi || true
 script:
   - cargo fmt -- --write-mode=diff
   - cargo build --verbose
-  - if [ "$SKIP_CLIPPY" = "false" ] ; then cargo clippy ; fi
+  - if [ "$RUN_CLIPPY" = "true" ] ; then cargo clippy ; fi
   - cargo test --verbose
