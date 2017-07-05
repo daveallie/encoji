@@ -1,4 +1,8 @@
 [![Build Status](https://travis-ci.org/daveallie/encoji.svg?branch=master)](https://travis-ci.org/daveallie/encoji)
+[![Crate](https://img.shields.io/crates/v/encoji.svg)](https://crates.io/crates/encoji)
+[![Docs](https://docs.rs/encoji/badge.svg)](https://docs.rs/encoji)
+![License](https://img.shields.io/crates/l/encoji.svg)
+[![Downloads](https://img.shields.io/crates/d/encoji.svg)](https://crates.io/crates/encoji)
 
 # encoji
 

@@ -21,6 +21,9 @@ include = [
   "src/**/*",
 ]
 
+[badges]
+travis-ci = { repository = "daveallie/encoji" }
+
 [dependencies]
 phf = "0.7"
 unicode-segmentation = "1.1.0"
