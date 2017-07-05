@@ -22,9 +22,9 @@ fn main() {
 
     let mut emoji_file = File::open("emojis.json").expect("Can't open emoji file");
     let mut buffer = String::new();
-    emoji_file
-        .read_to_string(&mut buffer)
-        .expect("Can't read emoji file");
+    emoji_file.read_to_string(&mut buffer).expect(
+        "Can't read emoji file",
+    );
 
     let emojis: Vec<Emoji> = serde_json::from_str(&buffer).expect("Invalid JSON im emoji file");
     assert!(emojis.len() == 256);
