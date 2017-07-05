@@ -24,7 +24,6 @@ include = [
 [dependencies]
 phf = "0.7"
 unicode-segmentation = "1.1.0"
-clippy = {version = "*", optional = true}
 
 [build-dependencies]
 phf_codegen = "0.7"
