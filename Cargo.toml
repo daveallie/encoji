@@ -1,6 +1,6 @@
 [package]
 name = "encoji"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Dave Allie <dave@daveallie.com>"]
 
 description = "Emoji based encoding and decoding. 🔥🔥🔥🚀"
