@@ -26,7 +26,7 @@ travis-ci = { repository = "daveallie/encoji" }
 
 [dependencies]
 phf = "0.7"
-unicode-segmentation = "1.1.0"
+unicode-segmentation = "1.6"
 
 [build-dependencies]
 phf_codegen = "0.7"
